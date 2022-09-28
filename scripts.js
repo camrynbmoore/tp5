@@ -3,13 +3,23 @@
 window.onload = function() {
  document.querySelector("#heroimage h1").classList.add("tp");
  
-  document.quesrySelector("#heroimage h1").onclick = function() {
+  document.querySelector("#heroimage h1").onclick = function() {
     this.classList.toggle("lightgreen");   
   }
   
-} // end window.onload
-
-
-//button
-
-//button .onclick="getElementByTagName(h4)"
+  document.querySelector("#recipeColumns #ingredients").onclick = function() {
+    this.classList.toggle("tpShow");
+  }
+  
+  document.querySelector("#recipeColumns #equipment").onclick = function() {
+    this.classList.toggle("tpShow");
+    
+  document.querySelector("#recipeColumns #directions").onclick = function() {
+    this.classList.toggle("tpShow");
+    }
+    
+  document.querySelector("#footer").innerHTML += "<p>Shout out to my mom for making this!</p>";
+  
+  }
+    
+}

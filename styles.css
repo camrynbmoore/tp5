@@ -1,4 +1,5 @@
 /* start baseline CSS */
+
 h4 {
   font-family: "Lato", sans-serif;
   margin-bottom: 0;
@@ -20,7 +21,8 @@ ol {
   display: inline;
 }
 
-li { /* includes style for all unordered and order list items */
+li {
+  /* includes style for all unordered and order list items */
   font-family: "Lato", sans-serif;
   font-size: 22px;
 }
@@ -51,15 +53,15 @@ li { /* includes style for all unordered and order list items */
 }
 
 /* for JavaScript */
+
 #heroimage h1.tp {
-  font-size: 50px; 
+  font-size: 50px;
 }
 
 #heroimage h1.lightgreen {
   color: #99ff99;
   text-shadow: 0px 8px 8px #000000;
 }
-
 
 /* end for JavaScript */
 
@@ -89,18 +91,27 @@ li { /* includes style for all unordered and order list items */
 }
 
 /* hide columns at first */
-#recipeColumns #ingredients ul, 
+
+#recipeColumns #ingredients ul,
 #recipeColumns #equipment ul,
-#recipeColumns #directions ol, {
-  display: none; 
+#recipeColumns #directions ol {
+  display: none;
+}
+
+#recipeColumns #ingredients.tpShow ul,
+#recipeColumns #equipment.tpShow ul,
+#recipeColumns #directions.tpShow ol {
+  display: block;
 }
 
 * {
   box-sizing: border-box;
 }
+
 /* end baseline CSS */
 
 /* for portrait layout */
+
 @media screen and (orientation: portrait) {
   #heroimage {
     height: 50vh;
@@ -108,11 +119,12 @@ li { /* includes style for all unordered and order list items */
   #heroimage h1 {
     font-size: 70px
   }
-  #recipeColumns { /* this is what we changed to make it work for portrait */
+  #recipeColumns {
+    /* this is what we changed to make it work for portrait */
     width: 100%;
     height: auto;
     display: block;
-  } 
+  }
   #recipeColumns div {
     float: none;
     display: block;
@@ -131,26 +143,30 @@ li { /* includes style for all unordered and order list items */
   }
   #recipeColumns h4 {
     font-size: 20px;
-  } /* end previous comment */
+  }
+  /* end previous comment */
 }
-  /* end of portrait media query */
 
-  /* start of @media query max-width */
-@media screen and (max-width: 575px) { 
+/* end of portrait media query */
+
+/* start of @media query max-width */
+
+@media screen and (max-width: 575px) {
   #heroimage {
     height: 50vh;
   }
   #heroimage h1 {
     font-size: 70px
   }
-   #heroimage h1 {
+  #heroimage h1 {
     font-size: 70px
   }
-  #recipeColumns { /* this is what we changed to make it work for portrait */
+  #recipeColumns {
+    /* this is what we changed to make it work for portrait */
     width: 100%;
     height: auto;
     display: block;
-  } 
+  }
   #recipeColumns div {
     float: none;
     display: block;
@@ -174,9 +190,12 @@ li { /* includes style for all unordered and order list items */
     font-size: 20px;
   }
 }
-    /* end of @media query max-width */
 
+/* end of @media query max-width */
+
+/* temporarily comment
 ul,
 ol {
   display: block;
 }
+*/
