@@ -77,6 +77,10 @@ li {
   display: inline-block;
   position: relative;
 }
+#recipeColumns li div {
+  float: none;
+}
+
 
 #recipeColumns div#ingredients {
   width: 33%;

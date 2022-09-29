@@ -13,13 +13,11 @@ window.onload = function() {
   
   document.querySelector("#recipeColumns #equipment").onclick = function() {
     this.classList.toggle("tpShow");
-    
+  }
   document.querySelector("#recipeColumns #directions").onclick = function() {
     this.classList.toggle("tpShow");
     }
     
   document.querySelector("#footer").innerHTML += "<p>Shout out to my mom for making this!</p>";
-  
-  }
     
 }
